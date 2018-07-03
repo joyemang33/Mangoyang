@@ -53,3 +53,4 @@ int main(){
 	}
 	return printf("%.2lf", sn[1]), 0;
 }
+}
