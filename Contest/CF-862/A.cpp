@@ -12,7 +12,14 @@ inline void read(T &x){
     for(; isdigit(ch); ch = getchar()) x = x * 10 + ch - 48;
     if(f) x = -x;
 }
+int buf[100005];
 int main(){
-
+	int n, m, ans = 0;
+	read(n), read(m);
+	for(int i = 1, x; i <= n; i++)
+		read(x), buf[x]++;
+	for(int i = 0; i < m; i++)
+		if(!buf[i]) ans++;
+	ans += buf[m]; cout << ans;
 	return 0;
 }

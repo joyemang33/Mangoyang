@@ -13,6 +13,7 @@ inline void read(T &x){
     if(f) x = -x;
 }
 int main(){
-
+	int n; read(n);
+	for(int i = 1; i <= n; i++) printf("%d", i & 1);
 	return 0;
 }
