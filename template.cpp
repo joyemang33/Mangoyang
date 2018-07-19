@@ -13,6 +13,6 @@ inline void read(T &x){
     if(f) x = -x;
 }
 int main(){
-
+	
 	return 0;
 }
